@@ -1,6 +1,3 @@
-# Claude Code Settings
-.claude/
-
 # Log files
 *.log
 logs/
