@@ -1,13 +1,27 @@
 {
-    "env": {
-        "ANTHROPIC_BASE_URL": "https://openrouter.ai/api",
-        "ANTHROPIC_AUTH_TOKEN": "YOUR_OPENROUTER_API_TOKEN_HERE",
-        "ANTHROPIC_API_KEY": "",
-        "ANTHROPIC_MODEL": "stepfun/step-3.5-flash:free",
-        "ANTHROPIC_SMALL_FAST_MODEL": "stepfun/step-3.5-flash:free",
-        "ANTHROPIC_DEFAULT_HAIKU_MODEL": "stepfun/step-3.5-flash:free",
-        "ANTHROPIC_DEFAULT_OPUS_MODEL": "stepfun/step-3.5-flash:free",
-        "ANTHROPIC_DEFAULT_SONNET_MODEL": "stepfun/step-3.5-flash:free",
-        "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_PAT_HERE"
-    }
+  "env": {
+    "ANTHROPIC_BASE_URL": "https://openrouter.ai/api",
+    "ANTHROPIC_AUTH_TOKEN": "YOUR_OPENROUTER_API_TOKEN_HERE",
+    "ANTHROPIC_API_KEY": "",
+    "ANTHROPIC_MODEL": "stepfun/step-3.5-flash:free",
+    "ANTHROPIC_SMALL_FAST_MODEL": "stepfun/step-3.5-flash:free",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "stepfun/step-3.5-flash:free",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "stepfun/step-3.5-flash:free",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "stepfun/step-3.5-flash:free",
+    "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_PAT_HERE"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(git clone:*)",
+      "Read(//c/Users/admin/.claude/skills/gstack/**)",
+      "Bash(./setup)",
+      "Bash(curl:*)",
+      "Bash(BUN_VERSION=\"1.3.10\" bash /tmp/bun-install.sh)",
+      "Bash(export BUN_INSTALL=\"$HOME/.bun\")",
+      "Bash(export PATH=\"$BUN_INSTALL/bin:$PATH\")",
+      "Bash(bun:*)",
+      "Bash(echo:*)",
+      "Bash(export PATH=\"$HOME/.bun/bin:$PATH\")"
+    ]
+  }
 }

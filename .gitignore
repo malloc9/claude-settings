@@ -25,3 +25,4 @@ Thumbs.db
 
 # Actual Claude settings (contains real tokens)
 .claude/settings.json
+.claude/settings.local.json
